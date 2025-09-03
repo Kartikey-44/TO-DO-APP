@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task_List_Display">
+    <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/backanimation"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="10dp"
+        app:lottie_fileName="Arrowleftcircle.json"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/taskpageheading"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="30dp"
+android:fontFamily="@font/poppins_semibold"
+android:gravity="center"
+android:text="Do Your Tasks Daily"
+android:textSize="30sp"
+android:textStyle="bold"
+android:textColor="@color/headingcolor"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toEndOf="@id/backanimation"
+app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/messageonpagethispagecard"
+        android:layout_width="390dp"
+        android:layout_height="60dp"
+        app:strokeWidth="5dp"
+        app:cardCornerRadius="50dp"
+        app:strokeColor="@color/StrokeColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskpageheading">
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/dialogtextcolor"
+            android:id="@+id/messageattaskpage"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="heelo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/recyclerView"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_margin="20dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/messageonpagethispagecard"
+app:layout_constraintVertical_weight="1" />
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/questionmark"
+        android:elevation="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent">
+       <ImageButton
+           android:id="@+id/instructions"
+           android:layout_width="match_parent"
+           android:clickable="true"
+           android:layout_height="match_parent"
+           android:contentDescription="instructions"
+           android:src="@drawable/baseline_question_mark_24"
+           android:background="@color/questionmark">
+
+       </ImageButton>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/questionmark"
+        android:elevation="20dp"
+        android:layout_marginStart="30dp"
+      app:layout_constraintStart_toStartOf="parent">
+        <ImageButton
+            android:id="@+id/addtask"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:contentDescription="instructions"
+            android:src="@drawable/baseline_add_24"
+            android:background="@color/questionmark">
+
+        </ImageButton>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emptylottie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@id/recyclerView"
+        app:layout_constraintTop_toTopOf="@id/recyclerView"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerView"
+        app:lottie_fileName="noresultfound.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Personalized_TO_DO_APP" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Dark theme customization -->
+    </style>
+
+    <!-- Professional Color Scheme -->
+    <color name="BackgroundColor">#1E293B</color> <!-- Deep slate background -->
+    <color name="TextColor">#E2E8F0</color> <!-- Light neutral text -->
+    <color name="dialogBackground">#273449</color> <!-- Softer dark dialog background -->
+    <color name="dialogtextcolor">#3B82F6</color> <!-- Bright professional blue accent -->
+    <color name="StrokeColor">#475569</color> <!-- Muted stroke gray -->
+    <color name="questionmark">#FBBF24</color> <!-- Warm amber for icons -->
+    <color name="headingcolor">#F1F5F9</color> <!-- High contrast headings -->
+    <color name="usernamedialogconfirm">#FFFFFF</color>
+</resources>

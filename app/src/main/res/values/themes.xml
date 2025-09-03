@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Personalized_TO_DO_APP" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/white</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="31">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="31">500</item>
+    </style>
+
+    <style name="Theme.Personalized_TO_DO_APP" parent="Base.Theme.Personalized_TO_DO_APP" />
+
+    <!-- Professional Color Scheme -->
+    <color name="BackgroundColor">#F9FAFB</color> <!-- Light neutral background -->
+    <color name="TextColor">#374151</color> <!-- Dark gray for better readability -->
+    <color name="dialogBackground">#FFFFFF</color> <!-- Clean white dialogs -->
+    <color name="dialogtextcolor">#FF7043</color> <!-- Professional blue accent -->
+    <color name="StrokeColor">#D1D5DB</color> <!-- Soft neutral gray stroke -->
+    <color name="questionmark">#F59E0B</color> <!-- Subtle amber for icons -->
+    <color name="headingcolor">#111827</color> <!-- Strong dark heading text -->
+    <color name="usernamedialogconfirm">#000000</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listitemview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    app:strokeColor="@color/StrokeColor"
+    app:strokeWidth="4dp"
+    android:layout_marginTop="10dp"
+    android:foreground="@color/BackgroundColor"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/BackgroundColor">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tasktitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Task Title"
+            android:textColor="@color/TextColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/completeAnimation" />
+
+        <TextView
+            android:id="@+id/taskdescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Task description goes here..."
+            android:textColor="@color/TextColor"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/tasktitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/completeAnimation" />
+
+        <TextView
+            android:id="@+id/completedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Completed on: 21 Aug 2025"
+            android:textColor="@color/TextColor"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/taskdescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/completeAnimation"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/completeAnimation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:lottie_fileName="Success.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>

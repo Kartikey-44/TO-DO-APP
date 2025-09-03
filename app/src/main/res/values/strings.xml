@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <string name="instructionsofapp">Instructions:\n\n1. Swipe Right To Edit The Task\n 2. Swipe Left To Delete The Task\n 3. Click Green Dot On Task To Mark It Complete\n4. Click On Tick  In Completed Task List \n\tTo Mark It Incomplete Tap Again In Completed List\n5. You Can Also Add Task By Tapping + Icon On Task List Screen</string>
+</resources>

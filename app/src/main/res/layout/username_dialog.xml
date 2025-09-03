@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dialogBackground"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/username_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Enter Your Name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/pin_container"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pin_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/username_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:startIconTint="@color/TextColor"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxStrokeColor="@color/StrokeColor"
+        android:layout_marginVertical="20dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pin_edditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter The Name"
+            android:textColor="@color/TextColor"
+            android:textSize="18sp"
+            android:maxLength="10"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/TextColor"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="@color/dialogtextcolor"
+        app:strokeColor="@color/StrokeColor"
+        app:strokeWidth="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pin_container"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="#F1F1F1"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
